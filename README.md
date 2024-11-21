@@ -32,6 +32,8 @@ The purpose of hwk4-task2-fire-perimeter-HOYT.ipynb is to isolate the boundary o
 
 The purpose of hwk4-task2-false-color-HOYT.ipynb is to use false color imagery to visualize the impact (the burn scar) of the Thomas Fire in 2017 by assigning infrared bands to visible colors and plotting shapefiles over the resulting images. Necessary steps include cleaning rasters and matching Coordinate Reference Systems (CRSs).  
 
+All data was stored locally in a "data" folder but not pushed to GitHub due to large size.
+
 ## Acknowledgments
 
 Thank you to Professor Carmen Galaz-García (@carmengg on GitHub) for preparing the Landsat data and assigning this homework.
