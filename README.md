@@ -3,33 +3,35 @@ Author: Carmen Hoyt
 
 ## Data
 
-Landsat Data: 
-Pre-processed, simplified collection of bands (red, green, blue, nir, swir) from Landsat Collection 2 Level-2 (collected by Landsat 8 satellite).
+Two datasets were used in this analysis:
 
-Fire Perimeter Data:
-Open-source data containing information from the spatial distrubtion of past fires in California published by the State of California and downloaded as a shapefile. 
+1. Landsat Data:
+   
+A cleaned, simplified collection of bands (red, green, blue, nir, swir) from Landsat Collection 2 Level-2 (collected by Landsat 8 satellite).
 
-## Repository Structure:
+Microsoft Open Source, Matt McFarland, Rob Emanuele, Dan Morris, & Tom Augspurger. (2022). microsoft/PlanetaryComputer: October 2022 (2022.10.28). Zenodo. https://doi.org/10.5281/zenodo.7261897
+Accessed: November 19, 2024
 
+2. Fire Perimeter Data:
+   
+Open-source data containing information from the spatial distribution of past fires in California published by the State of California (and downloaded as a shapefile). 
+
+State of California, Kimberly Wallin. (2024). CAL FIRE: May 2024 (2024.05.14). https://catalog.data.gov/dataset/california-fire-perimeters-all-b3436
+Accessed: November 19, 2024
+
+## Repository Structure
+```
 ├── LICENSE
+├── .gitignore
 ├── README.md
-├── data
-│   ├── California_Fire_Perimeters_2017
-│   │   ├── California_Fire_Perimeters_2017.cpg
-│   │   ├── California_Fire_Perimeters_2017.dbf
-│   │   ├── California_Fire_Perimeters_2017.prj
-│   │   ├── California_Fire_Perimeters_2017.shp
-│   │   └── California_Fire_Perimeters_2017.shx
-│   └── landsat8-2018-01-26-sb-simplified.nc
-└── thomas-fire-analysis.ipynb
+├── hwk4-task2-fire-perimeter-HOYT.ipynb
+└── hwk4-task2-false-color-HOYT.ipynb
+```
 
+The purpose of hwk4-task2-fire-perimeter-HOYT.ipynb is to isolate the boundary of the Thomas Fire in 2017 from the Fire Perimeter dataset by filtering the geo-dataframe downloaded from the State of California.
 
-This repository holds two notebooks that prepare the Thomas Fire boundary shapefile and the false color imagery, respectively.
-ADD 
-ADD
+The purpose of hwk4-task2-false-color-HOYT.ipynb is to use false color imagery to visualize the impact (the burn scar) of the Thomas Fire in 2017 by assigning infrared bands to visible colors and plotting shapefiles over the resulting images. Necessary steps include cleaning rasters and matching Coordinate Reference Systems (CRSs).  
 
-Structure:
+## Acknowledgments
 
-Data Access:
-
-Afcknowledgements
+Thank you to Professor Carmen Galaz-García (@carmengg on GitHub) for preparing the Landsat data and assigning this homework.
