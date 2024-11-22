@@ -3,7 +3,7 @@ Author: Carmen Hoyt
 
 ## Data
 
-Two datasets were used in this analysis:
+Two datasets are used in this analysis:
 
 1. Landsat Data:
    
@@ -21,18 +21,21 @@ Accessed: November 19, 2024
 
 ## Repository Structure
 ```
-├── LICENSE
+├── data
+│  ├── thomas_fire.cpg
+│  ├── thoams_fire.dbf
+│  ├── thomas_fire.prj
+│  ├── thomas_fire.shp
+│  └── thomas_fire.shx
 ├── .gitignore
 ├── README.md
-├── hwk4-task2-fire-perimeter-HOYT.ipynb
-└── hwk4-task2-false-color-HOYT.ipynb
+├── hwk4-task2-false-color-HOYT.ipynb
+└── hwk4-task2-fire-perimeter-HOYT.ipynb
 ```
 
-The hwk4-task2-fire-perimeter-HOYT.ipynb notebook isolates the boundary of the Thomas Fire in 2017 from the Fire Perimeter dataset by filtering the geo-dataframe downloaded from the State of California.
+The hwk4-task2-fire-perimeter-HOYT.ipynb notebook isolates the boundary of the Thomas Fire in 2017 from the full "Fire Perimeter" dataset by filtering the geo-dataframe downloaded from the State of California. The data folder houses the resulting shapefile `thomas_fire.shp`.
 
 The hwk4-task2-false-color-HOYT.ipynb notebook uses false color imagery to visualize the impact (the burn scar) of the Thomas Fire in 2017 by assigning infrared bands to visible colors and plotting shapefiles over the resulting images. Necessary steps include cleaning rasters and matching Coordinate Reference Systems (CRSs).  
-
-All data was stored locally in a "data" folder but not pushed to GitHub due to its large size.
 
 ## Acknowledgments
 
