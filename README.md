@@ -1,6 +1,8 @@
 # Visualizing the impact of the Thomas Fire (2017)
 Author: Carmen Hoyt
 
+This repository hosts homework assignment #4 for EDS220: Working with Environmental Datasets. The purpose of the assignment is to use false color imagery to visualize the impact (the burn scar) of the Thomas Fire in 2017. 
+
 ## Data
 
 Two datasets are used in this analysis:
@@ -39,4 +41,4 @@ The hwk4-task2-false-color-HOYT.ipynb notebook uses false color imagery to visua
 
 ## Acknowledgments
 
-Thank you to Professor Carmen Galaz-García (@carmengg on GitHub) for preparing the Landsat data and assigning this homework.
+Thank you to Professor Carmen Galaz-García (@carmengg on GitHub) for preparing the Landsat data and assigning this homework for EDS 220.
